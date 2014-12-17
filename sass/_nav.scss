@@ -1,0 +1,27 @@
+/* -----------------------------------------
+   Navigation Styles
+----------------------------------------- */
+
+
+.nav{
+    list-style:none;
+    margin-left:0;
+    @extend .cf;
+
+    > li{
+
+        &.active > a {
+            }        
+        &,
+        > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+            text-decoration:none;
+            :hover {
+                text-decoration:none;
+            }
+
+        }
+    }
+}

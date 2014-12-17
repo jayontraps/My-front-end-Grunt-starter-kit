@@ -1,0 +1,35 @@
+/* Text elements */
+p {
+	margin-bottom: 1.5em;
+}
+
+ul {
+	list-style: none;
+}
+ol {
+	list-style: decimal;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+// b, strong {
+// 	font-family: $heading_font;
+// 	font-weight: normal;
+// }
+
+.highlight {
+	color: $body_color;
+}
+
+.small {
+	font-size: $milli-size;
+}
