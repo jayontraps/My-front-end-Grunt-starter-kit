@@ -1,19 +1,13 @@
-/* clear floats */
-.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
-.clearfix:after { clear: both; }  
-.clearfix { zoom: 1; }  
-
 .group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 .group { display: inline-block; clear: both; }
 /* start commented backslash hack \*/ * html .group { height: 1%; } .group { display: block; } /* close commented backslash hack */
 
 
 
-
+/* clear floats */
 .clear	{
-clear: both;
+    clear: both;
 }
-
 
 .cf{
     zoom:1;
@@ -27,4 +21,9 @@ clear: both;
     &:after{
         clear:both;
     }
+}
+
+
+.hidden {
+  display: none !important;
 }

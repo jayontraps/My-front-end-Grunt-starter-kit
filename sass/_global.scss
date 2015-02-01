@@ -1,10 +1,26 @@
 * {
-  // @include box-sizing(border-box);
   box-sizing: border-box;
+}
+
+/* Optional min width */
+html {
+  min-width: 20rem;
 }
 
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
+}
+
+body {
+	@include breakpoint(tablet) {
+		background-color: grey;
+	}	
+	@include breakpoint(medium-screen) {
+		background-color: orange;
+	}	
+	@include breakpoint(large-screen) {
+		background-color: blue;
+	}
 }
